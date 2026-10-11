@@ -53,3 +53,30 @@
 
 - User accounts, server-side persistence, external quote APIs, search, categories,
   sharing, and a build or test framework.
+
+## Technical Context
+
+- **Language/runtime**: Plain HTML, CSS, and browser JavaScript.
+- **Dependencies**: None.
+- **Persistence**: Browser `localStorage`, storing versioned quote identifiers.
+- **External interfaces**: None.
+- **Unknowns**: None; feature scope and behavior are specified.
+
+## Constitution Check
+
+- Simplicity: one static page and no runtime dependencies.
+- Testability: each user action has observable acceptance criteria and a manual
+  end-to-end validation scenario.
+- User data: stable favorite identities and visible persistence errors.
+- Accessibility: semantic content, keyboard-operable controls, visible focus,
+  and accessible state.
+- Maintainability: small, explicit state and rendering responsibilities.
+
+All gates pass before design and after design.
+
+## Design Artifacts
+
+- Research decisions: [research.md](research.md)
+- Data model: [data-model.md](data-model.md)
+- End-to-end validation guide: [quickstart.md](quickstart.md)
+- No external contracts are needed for this standalone page.
